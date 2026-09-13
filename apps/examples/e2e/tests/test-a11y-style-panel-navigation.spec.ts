@@ -284,7 +284,7 @@ async function replaceSelectedShapeLabel(page: Page, text: string) {
 	await expect
 		.poll(
 			async () => {
-				await page.keyboard.press('Meta+a')
+				await page.keyboard.press('ControlOrMeta+a')
 				await page.keyboard.type(text)
 				return getText()
 			},
